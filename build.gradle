@@ -34,6 +34,7 @@ dependencyManagement {
 }
 
 dependencies {
+	implementation 'org.springframework.kafka:spring-kafka'
 	// p6spy 의존성 추가 : 쿼리 파라미터 로그 남기기
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.2'
   

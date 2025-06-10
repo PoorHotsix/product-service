@@ -32,6 +32,16 @@ spring:
       hibernate:
         "[use_sql_comments]": true  
         "[format_sql]": true
+
+  kafka:
+    bootstrap-servers: localhost:9093
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
   # Key Cloak 설정
   #-----------------------------------------------------------------------
   # Quarkus 기반 Keycloak-Server 을 이용한 인증 처리

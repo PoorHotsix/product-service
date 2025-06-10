@@ -79,4 +79,13 @@ public class Product {
         this.updatedAt = LocalDateTime.now();
     }
 
+    // 소수 첫째자리로 반올림
+    // public void setRating(double rating) {
+    //     this.rating = Math.round(rating * 10) / 10.0;
+    // }
+
+    // public double getRating() {
+    //     return rating;
+    // }
+
 }
